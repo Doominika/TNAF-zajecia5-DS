@@ -4,7 +4,7 @@ const users =
 [
     { value: 'john1', label: 'John Doe', date: "12.01.1993", email: "johnek@gmail.com" },
     { value: 'john2', label: 'John Doe II', date: "02.02.2002", email: "bigcat@gmail.com"  },
-    { value: 'bob', label: 'Bob Smith', date: "", email: "babyyoda@gmail.com"  }
+    { value: 'bob', label: 'Bob Smith', date: "07.04.2000", email: "babyyoda@gmail.com"  }
 ]
 
 const MyComponent = () => 
@@ -21,7 +21,7 @@ const MyComponent = () =>
         <>
         <select value={selected} onChange={handlechange}> 
             <option value="0">Select user</option>
-            { users.map(user => ( <option value={user.value}>{user.label}</option> ))}
+            { users.map(user => ( <option value={user.value}> {user.label} </option> ))}
         </select>
         {selectedUser && (
             <>
